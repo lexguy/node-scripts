@@ -21,7 +21,7 @@ try {
   const mergeUrl = `${remoteUrl}/merge_requests/new?merge_request[source_project_id]=${projectIds[projectName]}&merge_request[source_branch]=${curBranchName}&merge_request[target_branch]=${targetBranchName}`;
   // process.stdout.write(mergeUrl);
   console.info();
-  console.info("mergeUrl", mergeUrl.replace(/\n/g, ""));
+  console.info("[MR Link]", mergeUrl.replace(/\n/g, ""));
 
   // 转JSON之后 \n 在字符串里面，需要通过 \\n 来匹配
   // const formatLinkString = JSON.stringify({ merge: mergeUrl }).replace(/\\n/g, "");
