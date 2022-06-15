@@ -23,6 +23,7 @@ try {
   const formatLinkString = JSON.stringify({ merge: mergeUrl }).replace(/\\n/g, "");
   const linkObj = JSON.parse(formatLinkString);
 
+  console.info();
   console.info("[MR Link]:", linkObj.merge);
   // exec(`start ${linkObj.merge}`);
 } catch (error) {
