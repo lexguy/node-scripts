@@ -17,6 +17,11 @@ try {
   const projectIds = {
     wsxc_biz: 158491,
     wsxc_portal: 95513,
+    wsxc_order: 94994,
+    wsxc_album: 94993,
+    wsxc_ewmp_miniapp: 197888,
+    wsxc_miniapp_taro: 114708,
+    admin_increase_membership: 203931,
   };
   const mergeUrl = `${remoteUrl}/merge_requests/new?merge_request[source_project_id]=${projectIds[projectName]}&merge_request[source_branch]=${curBranchName}&merge_request[target_branch]=${targetBranchName}`;
   // process.stdout.write(mergeUrl);
